@@ -1,41 +1,71 @@
 body{
+    line-height: 1.6; 
+    margin: 20px;
    /* Set line spacing */
 }
 
 
 header, nav{
+    padding: 10px 20px;
+    margin: 10px 0; 
+    background-color: white;
     /* Set padding and margin */
 
 }
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
 nav ul li{
+    margin: 0 15px; /* Set margin between list items (0 top/bottom, 10px left/right) */
+    padding: 10px 20px; /* Set padding for list items (8px top/bottom, 15px left/right) */
+    background-color: blanchedalmond;
+    font-size: 18px; /* Set font size for list items */
+    border-radius: 5px; 
     /* Set display, margin, padding, font-size, background-color */
 
 }
 
 nav a{
+    text-decoration: none;
+    color: black;
     /* Set text decoration*/
 }
 
 a:visited{
+    color:black;
     /* Set color */
 
 }
 
 nav a.current{
+    text-decoration: underline wavy;
+    text-transform: uppercase;
     /* Set text decoration, transformation, and underline properties */
 }
 
 
 h1{
+    font-family: 'Merriweather', Anton, 'Times New Roman', sans-serif;
+    font-size: 36px;
+    margin-top: 20px;
    /*Set font and font size*/
 
 }
 
 h2{
-    /*Set font, font size, and alignment*/
+    font-family: Anton, 'Times New Roman', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
 }
+    /*Set font, font size, and alignment*/
+
 
 h3{
+    font-size: 24px;
+    margin-top: 20px;
     /*Set font size*/
 
 }
@@ -45,41 +75,61 @@ h1, h2, h3{
 
 }
 .grid{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    gap: 20px;
+    border-radius: 10px;
     /*Set width, margin, border properties, background color, and grid properties */
 }
 
 .grid div{
+    border: 1px solid #000;
+    padding: 20px;
+    background-color: #f0f0f0;
     /* Set border properties, padding, and background color */
 
 }
 
 .grid img{
+    width: 100%;
+    margin-bottom: 10px;
     /* Set width, margin, and display */
 }
 
 
 .grid div:nth-child(3n+1)  {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     /* Set box shadow */
     }
 
 .grid div:nth-child(3n)  {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     /* Set box shadow */ 
 }
 
 .grid div:nth-child(3n+2)  {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
      /* Set box shadow */
 }
     
 
 p + p {
-     /* Set indentation */
+    text-indent: 20px;
+     
   }
   
 p{
+    margin-bottom: 15px;
      /* Set margin */
 }
 
 
 .grid ul li{
+    list-style-type: disc; 
+    margin: 5px 0;
+    padding: 0;
+    line-height: 1.4; 
     /* Set margin, line-spacing, list styling  */
 }
